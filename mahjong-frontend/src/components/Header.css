@@ -1,0 +1,79 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures consistent box-sizing across elements */
+}
+
+html, body {
+  height: 100%; /* Ensures the body takes the full height of the screen */
+}
+
+body {
+  font-family: Arial, sans-serif; /* Optional: Set your default font here */
+  background-color: #f4f4f4; /* Optional: Set the background color */
+}
+
+
+.header {
+  display: flex;                     /* Use flexbox for layout */
+  justify-content: space-between;     /* Space between left, center, and right */
+  align-items: center;               /* Center items vertically */
+  background-color: #B0C7BD;         /* Grey background */
+  padding: 10px 20px;                /* Some padding around the header */
+}
+
+.title {
+  flex: 1;                            /* Take up available space in the center */
+  text-align: center;                 /* Center the title */
+  color: #3D5A6C;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.header-button {
+  background-color: #fff;            /* White background for buttons */
+  color: #3D5A6C;                    /* Dark Grey text */
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.header-button:hover {
+  background-color: #45a049;         /* Green on hover */
+  color: white;
+}
+
+.language-dropdown {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.language-dropdown:hover {
+  background-color: #f1f1f1;
+}
+
+/* Container for Lobbies and About buttons */
+.left-buttons {
+  display: flex;                    /* Use flex for buttons layout */
+  gap: 10px;                         /* Space between buttons */
+  margin-right: auto;                /* Push the left-buttons container to the left */
+}
+
+/* Adjust margins */
+.left {
+  margin-right: auto;                /* Push the Lobbies and About buttons to the left */
+}
+
+.right {
+  margin-left: auto;                 /* Push the About button to the right */
+}
+
+.login {
+  margin-left: 20px;                 /* Space between the language dropdown and login button */
+}
